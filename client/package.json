@@ -29,11 +29,7 @@
         "html-webpack-plugin": "^4.5.2",
         "style-loader": "^1.2.1",
         "webpack": "^5.88.2",
-<<<<<<< HEAD
         "webpack-cli": "^5.1.4",
-=======
-        "webpack-cli": "^4.9.0"
->>>>>>> origin/main
         "webpack-dev-server": "^3.11.0"
     }
 }
