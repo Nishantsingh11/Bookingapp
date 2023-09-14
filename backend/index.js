@@ -10,8 +10,6 @@ const cors = require("cors");
 app.use(cors());
 const { bookMovieSchema } = require("./schema");
 
-
-
 app.listen(port, () => console.log(`App listening on port ${port}!`));
 
 app.get("/api/booking", async (req, res) => {
