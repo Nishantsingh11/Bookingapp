@@ -1,91 +1,102 @@
+# Movie Booking System Readme
 
-# Project Name
-
-BookMyShow
-
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Getting Started](#getting-started)
-    1. [Project Setup](#project-setup)
-    2. [Database Configuration](#database-configuration)
-3. [Usage](#usage)
-    1. [Endpoints](#endpoints)
-    2. [Testing](#testing)
-4. [Dependencies](#dependencies)
-5. [License](#license)
-
-## Introduction
-
-Provide a brief introduction to your project. Explain its purpose and why it exists. Mention the technologies and tools you've used, such as Node.js and MongoDB.
+This Movie Booking System is a simple web application built using React for the frontend and Node.js with Express for the backend. It allows users to select a movie, a time slot, and book seats for a movie show. The application also displays the details of the last booking made.
 
 ## Getting Started
 
-These are the initial steps required to set up and run the project.
+To run this application locally, follow the steps below:
 
-### Project Setup
+### Prerequisites
 
-1. **Set up the Project**: Describe how to clone or initialize the project.
+You need to have Node.js and npm (Node Package Manager) installed on your machine.
 
-2. **Install Dependencies**: Mention any dependencies required to run the project. Provide installation instructions, if necessary.
+### Installation
 
- ```shell
+1. Clone the repository to your local machine:
+
+   ```
+   git clone https://github.com/Nishantsingh11/Bookingapp
+   ```
+
+2. Change to the project directory:
+
+   ```
+   cd Bookingapp
+   ```
+
+3. Install the backend dependencies:
+
+   ```
+   cd backend
    npm install
    ```
 
-3. **Start the Server**: Explain how to start the server using the provided scripts. For example:
+4. Install the frontend dependencies:
 
-   ```shell
+   ```
+   cd client
+   npm install
+   ```
+
+### Configuration
+
+Before running the application, you need to configure the MongoDB connection URI in the `server/index.js` file. Replace the `mongoURI` variable with your MongoDB connection URI.
+
+```javascript
+const mongoURI = "YOUR_MONGODB_CONNECTION_URI";
+```
+
+### Running the Application
+
+1. Start the backend server:
+
+   ```
+   cd backend
    npm start
    ```
 
-### Database Configuration
+   This will start the Express server, which will listen on port 8080 by default.
 
-1. **Create a Database**: Provide instructions on how to create a database for your project. Specify any database-related configurations.
+2. Start the frontend development server:
 
-2. **Connect the Database**: Describe how to establish a connection between your Node.js application and the MongoDB database.
+   ```
+   cd client
+   npm start
+   ```
 
-3. **Check the Database**: Explain how to verify that the database connection is successful.
+   This will start the React development server and open the application in your default web browser.
 
 ## Usage
 
-Explain how to use your project, including its main features and functionalities.
+### Booking a Movie
 
-### Endpoints
+1. Select a movie from the available options.
+2. Choose a time slot for the movie show.
+3. Select the number of seats you want to book for each seat category (e.g., A1, A2, D1, etc.).
+4. Click the "Book Now" button to make the booking. You will receive a confirmation message upon successful booking.
 
-Detail the available endpoints and their purposes:
+### Viewing Last Booking Details
 
-1. **Create a POST Endpoint**: Describe what the POST endpoint does and provide examples of how to use it.
+The application displays the details of the last booking made on the right-hand side of the page. If no previous bookings exist, it will display a message indicating that no bookings were found.
 
-2. **Create a GET Endpoint**: Explain the functionality of the GET endpoint and provide usage examples.
+## Built With
 
-3. **Endpoint with Validation**: If applicable, describe an endpoint that includes input validation and how to use it.
+- **Frontend:**
+  - React - A JavaScript library for building user interfaces.
+  - Axios - A promise-based HTTP client for making API requests.
 
-### Testing
-
-Explain how to test your project. Include information about the testing framework and commands. For example:
-
-To run tests, use the following command:
-
-```shell
-npm test
-```
-
-## Dependencies
-
-List the project's dependencies and their versions. Provide a brief explanation of each if necessary.
-
-- [body-parser](https://www.npmjs.com/package/body-parser): Version 1.19.0
-- [cors](https://www.npmjs.com/package/cors): Version 2.8.5
-- [express](https://www.npmjs.com/package/express): Version 4.17.1
-- [mongodb](https://www.npmjs.com/package/mongodb): Version 3.6.3
-- [mongoose](https://www.npmjs.com/package/mongoose): Version 5.10.15
-- [node-serialize](https://www.npmjs.com/package/node-serialize): Version 0.0.4
-- [nodemon](https://www.npmjs.com/package/nodemon): Version 3.0.1
+- **Backend:**
+  - Node.js - A JavaScript runtime for building server-side applications.
+  - Express - A web application framework for Node.js.
+  - MongoDB - A NoSQL database for storing booking data.
 
 ## License
 
-This project is licensed under the [ISC License](LICENSE.md).
-```
+This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
 
-In this improved README, I've added sections for introduction, getting started, usage, dependencies, and license. Each section provides clear instructions and information about your project, making it more professional and user-friendly. Make sure to replace the placeholder content with actual details relevant to your project.
+## Acknowledgments
+
+- This project was created as a simple movie booking system for educational purposes.
+- Special thanks to [OpenAI](https://openai.com) for providing the GPT-3 model that generated this readme template.
+
+Feel free to contribute to this project or use it as a starting point for your own movie booking system. Enjoy booking your favorite movies!
