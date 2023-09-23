@@ -68,29 +68,41 @@ This will start the React development server and open the application in your de
 
 ### Usage
 Booking a Movie
+
 Select a movie from the available options.
+
 Choose a time slot for the movie show.
 Select the number of seats you want to book for each seat category (e.g., A1, A2, D1, etc.).
+
 Click the "Book Now" button to make the booking. You will receive a confirmation message upon successful booking.
+
 Viewing Last Booking Details
-The application displays the details of the last booking made on the right-hand side of the page. If no previous bookings exist, it will display a message indicating that no bookings were found.
+
+The application displays the details of the last booking made on the right-hand side of the page.
+
+If no previous bookings exist, it will display a message indicating that no bookings were found.
 
 ### API
 The backend of this application provides two API endpoints:
 
 GET /api/booking: Retrieves a list of all booked movies.
+
 POST /api/booking: Allows users to book movie tickets by providing the movie, time slot, and selected seats.
 Built With
 ### Frontend:
 
 React - A JavaScript library for building user interfaces.
+
 Axios - A promise-based HTTP client for making API requests.
 ### Backend:
 
 Node.js - A JavaScript runtime for building server-side applications.
+
 Express - A web application framework for Node.js.
+
 MongoDB - A NoSQL database for storing booking data.
-License
+
+### License
 This project is licensed under the ISC License. See the LICENSE file for details.
 
 ## Acknowledgments
