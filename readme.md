@@ -16,19 +16,18 @@ You need to have Node.js and npm (Node Package Manager) installed on your machin
 
    ````shell
    git clone https://github.com/Nishantsingh11/Bookingapp
-    ```
-   Change to the project directory:
+   ```
+Change to the project directory:
 
     ```shell
    cd Bookingapp
     ```
-   Install the backend dependencies:
+Install the backend dependencies:
 
     ```shell
     cd backend
     npm install
-   ````
-
+   ```
 Install the frontend dependencies:
 
     ```shell
@@ -52,7 +51,6 @@ This will start the Express server, which will listen on port 8080 by default.
 Start the frontend development server:
 
    ```shell
-
 cd client
 npm start
    ```
