@@ -12,37 +12,28 @@ You need to have Node.js and npm (Node Package Manager) installed on your machin
 
 1. Clone the repository to your local machine:
 
-Save to grepper
 git clone https://github.com/Nishantsingh11/Bookingapp
 
-css
-Copy code
 
 2. Change to the project directory:
 
-Save to grepper
 cd Bookingapp
 
-markdown
-Copy code
+
 
 3. Install the backend dependencies:
 
-Save to grepper
 cd backend
 npm install
 
-markdown
-Copy code
+
 
 4. Install the frontend dependencies:
 
-Save to grepper
 cd client
 npm install
 
-csharp
-Copy code
+
 
 ### Configuration
 
@@ -50,20 +41,18 @@ Before running the application, you need to configure the MongoDB connection URI
 
 ```javascript
 const mongoURI = "YOUR_MONGODB_CONNECTION_URI";
-Save to grepper
+```
 Running the Application
 Start the backend server:
 
-bash
-Copy code
+
 cd backend
 npm start
 This will start the Express server, which will listen on port 8080 by default.
 
 Start the frontend development server:
 
-bash
-Copy code
+
 cd client
 npm start
 This will start the React development server and open the application in your default web browser.
