@@ -14,49 +14,48 @@ You need to have Node.js and npm (Node Package Manager) installed on your machin
 
 1. Clone the repository to your local machine:
 
-   ```shell
+   ````shell
    git clone https://github.com/Nishantsingh11/Bookingapp
+    ```
+   Change to the project directory:
 
-Change to the project directory:
+    ```shell
+   cd Bookingapp
+    ```
+   Install the backend dependencies:
 
-   ```shell
-      Copy code
-      cd Bookingapp
+    ```shell
+    cd backend
+    npm install
+   ````
 
-Install the backend dependencies:
-
-shell
-Copy code
-cd backend
-npm install
 Install the frontend dependencies:
 
-shell
-Copy code
-cd client
-npm install
+    ```shell
+    cd client
+    npm install
+    ```
 Configuration
 Before running the application, you need to configure the MongoDB connection URI in the server/index.js file. Replace the mongoURI variable with your MongoDB connection URI.
 
-javascript
-Copy code
 const mongoURI = "YOUR_MONGODB_CONNECTION_URI";
-Save to grepper
 Running the Application
+
 Start the backend server:
 
-shell
-Copy code
+   ```shell
 cd backend
 npm start
+   ```
 This will start the Express server, which will listen on port 8080 by default.
 
 Start the frontend development server:
 
-shell
+   ```shell
 
 cd client
 npm start
+   ```
 This will start the React development server and open the application in your default web browser.
 
 ## Usage
@@ -88,3 +87,4 @@ This project was created as a simple movie booking system for educational purpos
 Feel free to contribute to this project or use it as a starting point for your own movie booking system. Enjoy booking your favorite movies!
 
 
+```
