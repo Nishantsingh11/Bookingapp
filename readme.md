@@ -11,27 +11,34 @@ You need to have Node.js and npm (Node Package Manager) installed on your machin
 ### Installation
 
 1. Clone the repository to your local machine:
+```shell
 
 git clone https://github.com/Nishantsingh11/Bookingapp
+```
 
 
 2. Change to the project directory:
+```shell
 
 cd Bookingapp
-
+```
 
 
 3. Install the backend dependencies:
+```shell
 
 cd backend
 npm install
+```
 
 
 
 4. Install the frontend dependencies:
 
+```shell
 cd client
 npm install
+```
 
 
 
@@ -59,7 +66,7 @@ npm start
 ```
 This will start the React development server and open the application in your default web browser.
 
-## Usage
+### Usage
 Booking a Movie
 Select a movie from the available options.
 Choose a time slot for the movie show.
@@ -68,17 +75,17 @@ Click the "Book Now" button to make the booking. You will receive a confirmation
 Viewing Last Booking Details
 The application displays the details of the last booking made on the right-hand side of the page. If no previous bookings exist, it will display a message indicating that no bookings were found.
 
-## API
+### API
 The backend of this application provides two API endpoints:
 
 GET /api/booking: Retrieves a list of all booked movies.
 POST /api/booking: Allows users to book movie tickets by providing the movie, time slot, and selected seats.
 Built With
-# Frontend:
+### Frontend:
 
 React - A JavaScript library for building user interfaces.
 Axios - A promise-based HTTP client for making API requests.
-# Backend:
+### Backend:
 
 Node.js - A JavaScript runtime for building server-side applications.
 Express - A web application framework for Node.js.
