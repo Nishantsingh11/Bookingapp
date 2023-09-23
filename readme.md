@@ -110,4 +110,3 @@ This project is licensed under the ISC License. See the LICENSE file for details
 This project was created as a simple movie booking system for educational purposes.
 Feel free to contribute to this project or use it as a starting point for your own movie booking system. Enjoy booking your favorite movies!
 
-Live Demo
