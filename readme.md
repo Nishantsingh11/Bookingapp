@@ -1,10 +1,8 @@
 # Movie Booking System
 
-The Movie Booking System is a web application built using React for the frontend and Node.js with Express for the backend. It allows users to select a movie, a time slot, and book seats for a movie show. The application also displays the details of the last booking made.
+This Movie Booking System is a simple web application built using React for the frontend and Node.js with Express for the backend. It allows users to select a movie, a time slot, and book seats for a movie show. The application also displays the details of the last booking made.
 
 ## Getting Started
-
-To run this application locally, follow the steps below:
 
 ### Prerequisites
 
@@ -14,49 +12,63 @@ You need to have Node.js and npm (Node Package Manager) installed on your machin
 
 1. Clone the repository to your local machine:
 
-   ````shell
-   git clone https://github.com/Nishantsingh11/Bookingapp
-   ```
-Change to the project directory:
+Save to grepper
+git clone https://github.com/Nishantsingh11/Bookingapp
 
-    ```shell
-   cd Bookingapp
-    ```
-Install the backend dependencies:
+css
+Copy code
 
-    ```shell
-    cd backend
-    npm install
-   ```
-Install the frontend dependencies:
+2. Change to the project directory:
 
-    ```shell
-    cd client
-    npm install
-    ```
-Configuration
-Before running the application, you need to configure the MongoDB connection URI in the server/index.js file. Replace the mongoURI variable with your MongoDB connection URI.
+Save to grepper
+cd Bookingapp
 
+markdown
+Copy code
+
+3. Install the backend dependencies:
+
+Save to grepper
+cd backend
+npm install
+
+markdown
+Copy code
+
+4. Install the frontend dependencies:
+
+Save to grepper
+cd client
+npm install
+
+csharp
+Copy code
+
+### Configuration
+
+Before running the application, you need to configure the MongoDB connection URI in the `server/index.js` file. Replace the `mongoURI` variable with your MongoDB connection URI.
+
+```javascript
 const mongoURI = "YOUR_MONGODB_CONNECTION_URI";
+Save to grepper
 Running the Application
-
 Start the backend server:
 
-   ```shell
+bash
+Copy code
 cd backend
 npm start
-   ```
 This will start the Express server, which will listen on port 8080 by default.
 
 Start the frontend development server:
 
-   ```shell
+bash
+Copy code
 cd client
 npm start
-   ```
 This will start the React development server and open the application in your default web browser.
 
-## Usage
+Usage
 Booking a Movie
 Select a movie from the available options.
 Choose a time slot for the movie show.
@@ -65,24 +77,26 @@ Click the "Book Now" button to make the booking. You will receive a confirmation
 Viewing Last Booking Details
 The application displays the details of the last booking made on the right-hand side of the page. If no previous bookings exist, it will display a message indicating that no bookings were found.
 
-## Built With
-### Frontend:
+API
+The backend of this application provides two API endpoints:
+
+GET /api/booking: Retrieves a list of all booked movies.
+POST /api/booking: Allows users to book movie tickets by providing the movie, time slot, and selected seats.
+Built With
+Frontend:
 
 React - A JavaScript library for building user interfaces.
 Axios - A promise-based HTTP client for making API requests.
- ### Backend:
+Backend:
 
 Node.js - A JavaScript runtime for building server-side applications.
 Express - A web application framework for Node.js.
 MongoDB - A NoSQL database for storing booking data.
-## Deployment
-The application is deployed and accessible online. You can access it at the following link: Movie Booking System
+License
+This project is licensed under the ISC License. See the LICENSE file for details.
 
-
-
-## Acknowledgments
+Acknowledgments
 This project was created as a simple movie booking system for educational purposes.
 Feel free to contribute to this project or use it as a starting point for your own movie booking system. Enjoy booking your favorite movies!
 
-
-```
+Live Demo
