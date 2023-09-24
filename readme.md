@@ -2,7 +2,8 @@
 This Movie Booking System is a simple web application built using React for the frontend and Node.js with Express for the backend. It allows users to select a movie, a time slot, and book seats for a movie show. The application also displays the details of the last booking made.
 
 ## Preview BookingApp 
- [Booking](https://6505401f90e9f36343c200fe--relaxed-biscochitos-28660f.netlify.app/)
+ [Frontend](https://6505401f90e9f36343c200fe--relaxed-biscochitos-28660f.netlify.app/)
+ [Backend](https://bokking-app.onrender.com)
 
 ## Getting Started
 Prerequisites
