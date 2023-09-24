@@ -3,8 +3,11 @@ This Movie Booking System is a simple web application built using React for the 
 
 ## Preview BookingApp 
  [Frontend](https://6505401f90e9f36343c200fe--relaxed-biscochitos-28660f.netlify.app/)
+
  
  [Backend](https://bokking-app.onrender.com)
+ 
+  use /api/booking
 
 ## Getting Started
 Prerequisites
