@@ -1,6 +1,6 @@
 const mongodb = require('mongodb');
 
-const mongoURI = "mongodb+srv://Bookmyshow:Bookmyshow@bookmyshow.ugkiexs.mongodb.net/bookmoviesshow"
+const mongoURI = "mongodb+srv://Nishant:Nishant@cluster0.smijsbl.mongodb.net/?retryWrites=true&w=majority"
 
 let mongoose = require('mongoose');
 const { bookMovieSchema } = require('./schema')
